@@ -1,0 +1,209 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: linear-gradient(45deg, rgb(187, 167, 172), rgb(94, 91, 91));
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.card {
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.36);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 400px);
+  left: -80px;
+  z-index: -1;
+  background: rgb(32, 31, 32);
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -16px;
+  z-index: -1;
+  background: rgb(145, 130, 131);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.card .container-label {
+  display: grid;
+  flex-direction: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #ffffff;
+  background: linear-gradient(180deg, rgb(94, 86, 88), rgb(240, 135, 135));
+  padding-left: 2rem;
+  padding-right: 3rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  gap: 15px;
+  
+}
+.card .container-label span {
+  background-color: #ffffff;
+  margin-top: 2px;
+  height: 3px;
+  width: 48px;
+}
+.card .container-icon {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+}
+.card .container-icon .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: linear-gradient(180deg, rgb(78, 71, 72), rgb(196, 122, 122));
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+.card .container-icon .circle i {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.card .container-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: rgb(243, 237, 239);
+  background: #463434;
+  padding: 5rem;
+  width: 450px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  
+}
+.card .container-form label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+.card .container-form input {
+  color: rgb(182, 155, 155);
+  background-color: transparent;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid rgb(233, 157, 175);
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.card .container-form input:focus {
+  border-bottom: 8px solid rgb(228, 219, 221);
+  background-color: transparent;  
+  outline: 0;
+  
+}
+
+.card .container-form input:hover {
+ 
+  background-color: transparent;  
+  outline: 0;
+}
+.card .container-form input::placeholder {
+  color: rgb(182, 155, 155);
+  text-transform: none;
+}
+.card .container-form #email {
+  margin-bottom: 1.75rem;
+}
+.card .container-form .container-input {
+  width: 100%;
+}
+.card .container-form .container-input i {
+  float: right;
+  position: relative;
+  margin-top: -24px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.card .container-form .change-password {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(182, 155, 155);
+  margin-top: 30px;
+  
+}
+.card .container-form .change-password a {
+  color: rgb(235, 230, 231);
+  padding-left: 10px;
+}
+.card .container-form button {
+  color: #ffffff;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, rgb(78, 71, 72), rgb(196, 122, 122));
+  padding: 12px 16px;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card .container-form button:hover {
+  color: #ffffff;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, rgb(51, 46, 47), rgb(221, 121, 121));
+  padding: 14px 18px;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card::before {
+    display: none;
+  }
+  .card::after {
+    display: none;
+  }
+  .card .container-label {
+    padding: 3rem 2rem;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+  .card .container-icon {
+    display: none;
+  }
+  .card .container-form form {
+    padding: 3rem 2rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    width: auto;
+  }
+}
