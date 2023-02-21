@@ -20,11 +20,15 @@
 
 # Descrição do Projeto:
 
-Bem-vindo ao nosso projeto de Relólio Digital
-Agradeço por visitar meu projeto. Este é um exemplo simples de como Construir uma tela de Login , neste modelo usamos a navegação para quando o usuário clicar em 
+Bem-vindo ao nosso projeto de Modelo de Login 01
+
+Agradeço por visitar meu projeto. 
+
+Este é um exemplo simples de como Construir uma tela de Login , neste modelo usamos a navegação para quando o usuário clicar em 
 não tenho cadastro abra outra pagina para cadastro com validações de campos em brancos e verifica também se a senha e o confirme senha são iguais
 
 Neste projeto, utilizei apenas HTML, CSS e JavaScript
+
 Agradeço por testar e avaliar meu projeto. Estou sempre em busca de melhorias e sugestões para tornar minha aplicação ainda mais eficiente e útil.
 
 ## Veja Agora No link Abaixo como Ficou o Projeto Final
